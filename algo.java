@@ -34,7 +34,7 @@ public class algo {
   
   public static void  main ( String [ ] args )    {
     Initialisation  ( );
-    System.out.println ("Tableau initial :");
+    System.out.println ("Tableau non trié :");
     Impression  ( );
     TriBulle  ( );
     System.out.println ("Tableau une fois trié :");
