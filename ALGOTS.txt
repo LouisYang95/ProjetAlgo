@@ -3,7 +3,6 @@ TRI SELECTION
 
 ENTREE 
 	Afficher un tableau
-	(t = tableau 20)
 	l = longueur de tableau
 
 Debut 

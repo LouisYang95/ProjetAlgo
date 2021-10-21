@@ -33,10 +33,10 @@ class   ProjetAlgo1
 //--------------- RUN DU CODE ----------------//
  public static void  main ( String [] args ) 
  {     int [] tab = {1,2,45,66,777,2326,9};      //VALEUR A METTRE DANS LE TABLEAU
-   System.out.println ("Tableau initial :");
+   System.out.println ("Tableau sans le tri:");
    AfficheTableau(tab);
    TriSelect (tab);
-   System.out.println ("Tableau une fois trié :");
+   System.out.println ("Tableau trié :");
    AfficheTableau  (tab);
  }  
 }
