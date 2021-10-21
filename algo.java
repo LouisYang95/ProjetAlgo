@@ -1,13 +1,13 @@
-package ALGOGIT;
+package ProjetAlgo;
 
 public class algo {
     class  ApplicationTriBulle  
 {
-  static  int [] table  =  new  int [100]  ;  // le tableau a trier en attribut
+  static  int [] table  =  new  int [10]  ;  // le tableau a trier en attribut
   
    static void  TriBulle  ( )    {
-    int  n  =  table.length - 1 ;
-   for (  int  i  =  n ;  i >= 1 ;  i -- )
+    int  l  =  table.length - 1 ;
+   for (  int  i  =  l ;  i >= 1 ;  i -- )
     for (  int  j  =  2 ;  j <= i ;  j ++ ) 
      if ( table[j - 1]  >  table[j] )
      {
@@ -19,17 +19,17 @@ public class algo {
   
   static void  Impression  ( )   {
     // Affichage du tableau 
-    int  n  =  table.length - 1 ;
-   for (  int  i  =  1 ;  i <= n ;  i ++ ) 
+    int  l  =  table.length - 1 ;
+   for (  int  i  =  1 ;  i <= l ;  i ++ ) 
      System.out.print ( table[i] + " , ");
     System.out.println ();
   }
   
   static void  Initialisation   ( )    {
-    // remplissage aléatoire du tableau 
-    int  n  =  table.length - 1 ;
-   for (  int  i  =  1 ;  i <= n ;  i ++ ) 
-     table[i]  =  ( int )( Math.random () * 200 );
+    // remplie le tableau avec des chiffres aléatoire  
+    int  l  =  table.length - 1 ;
+   for (  int  i  =  1 ;  i <= l ;  i ++ ) 
+     table[i]  =  ( int )( Math.random () * 15 );
   }
   
   public static void  main ( String [ ] args )    {
