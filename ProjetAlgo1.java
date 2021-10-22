@@ -19,7 +19,7 @@ class   ProjetAlgo1
     int comparaison = 0;        //Lorsqu'il y a comparaison entre 2 valeurs
     int echange = 0;            //Lorsqu'il y a 3 affectations
     int affectation =0;         //Lorsqu'on attribut une valeur
-    int operation = 0;      
+    int operation = 0;          //Represente les comparaisons + affectations
     int l  =  tab.length-1 ;
 
   for (  int  i  =  1 ;  i  <= l ;  i++)
@@ -42,6 +42,7 @@ class   ProjetAlgo1
         echange +=1;
 
   } 
+  //-----------------------------AFFICHER-----------------------------------//
   operation = comparaison + affectation;
 
   System.out.println ("Il y a eu : " + affectation + " affections");
@@ -49,6 +50,7 @@ class   ProjetAlgo1
   System.out.println ("Il y a eu : " + echange + " echanges");
   System.out.println ("Il y a eu : " + operation + " operations");
  }
+ //---------------TRI tri_insertion------------------------//
  public static void tri_insertion(int T[]) 
  {  
       int comparaison1 = 0;
@@ -75,12 +77,14 @@ class   ProjetAlgo1
            T[j+1] = m; 
            affectation1 ++;
     }
-    operation = comparaison1 + affectation1;
+    operation = comparaison1 + affectation1; 
+    //---------------AFFICHER--------------------//
     System.out.println ("Il y a eu : " + affectation1 + " affections");
     System.out.println ("Il y a eu : " + comparaison1 + " comparaisons");
     System.out.println ("Il y a eu : " + echange1 + " echanges");
     System.out.println ("Il y a eu : " + operation + " operations");
   } 
+  //------------------------------TRI BULLE----------------------------------//
   static void  TriBulle  (int table[])    
   {
     int affectation = 0;
@@ -105,12 +109,13 @@ class   ProjetAlgo1
      }
      }
     operation = comparaison + affectation;
-
+//---------------AFFICHER--------------------//
     System.out.println ("Il y a eu : " + affectation + " affections");
     System.out.println ("Il y a eu : " + comparaison + " comparaisons");
     System.out.println ("Il y a eu : " + echange + " echanges");
     System.out.println ("Il y a eu : " + operation + " operations");
 }
+//==========================TRI BULLE OPTIMISE======================================//
 static void TriBulleOpti  (int table []){
   boolean ordre = false; 
  int comparaison1=0;
@@ -145,7 +150,7 @@ static void TriBulleOpti  (int table []){
         }
       }
       operation = comparaison1 + affectation1;
-
+//---------------AFFICHER--------------------//
       System.out.println ("Il y a eu : " + affectation1 + " affections");
       System.out.println ("Il y a eu : " + comparaison1 + " comparaisons");
       System.out.println ("Il y a eu : " + echange1 + " echanges");
