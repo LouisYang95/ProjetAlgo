@@ -40,7 +40,7 @@ public class algo
 
 public static void  main ( String [ ] args ) 
   {
-      int [] table = {1,9,8,7,6,5,4,3,2,10};
+      int [] table = {1,5,8,2,4,9,6,3,7,10};
 
       System.out.println ("Tableau non trié :");
 
