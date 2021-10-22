@@ -40,8 +40,10 @@ class   ProjetAlgo1
       tab[ i ] =  temp;
         affectation +=3;
         echange +=1;
-        operation +=1;
+
   } 
+  operation = comparaison + affectation;
+
   System.out.println ("Il y a eu : " + affectation + " affections");
   System.out.println ("Il y a eu : " + comparaison + " comparaisons");
   System.out.println ("Il y a eu : " + echange + " echanges");
@@ -52,6 +54,7 @@ class   ProjetAlgo1
       int comparaison1 = 0;
       int affectation1 = 0;
       int echange1 = 0;
+      int operation = 0; 
       int n = T.length;  
     
       for (int i = 1; i < n; i++)
@@ -72,15 +75,18 @@ class   ProjetAlgo1
            T[j+1] = m; 
            affectation1 ++;
     }
+    operation = comparaison1 + affectation1;
     System.out.println ("Il y a eu : " + affectation1 + " affections");
     System.out.println ("Il y a eu : " + comparaison1 + " comparaisons");
     System.out.println ("Il y a eu : " + echange1 + " echanges");
+    System.out.println ("Il y a eu : " + operation + " operations");
   } 
   static void  TriBulle  (int table[])    
   {
     int affectation = 0;
     int comparaison = 0;
     int echange = 0;
+    int operation = 0; 
 
     int  l  =  table.length - 1 ;
     for (  int  i  =  l ;  i >= 1 ;  i -- ){
@@ -98,15 +104,19 @@ class   ProjetAlgo1
        echange += 1;
      }
      }
+    operation = comparaison + affectation;
+
     System.out.println ("Il y a eu : " + affectation + " affections");
     System.out.println ("Il y a eu : " + comparaison + " comparaisons");
     System.out.println ("Il y a eu : " + echange + " echanges");
+    System.out.println ("Il y a eu : " + operation + " operations");
 }
 static void TriBulleOpti  (int table []){
   boolean ordre = false; 
  int comparaison1=0;
  int echange1 = 0;
  int affectation1=0;
+ int operation = 0; 
 
 
   while (!ordre) 
@@ -134,9 +144,12 @@ static void TriBulleOpti  (int table []){
           }
         }
       }
+      operation = comparaison1 + affectation1;
+
       System.out.println ("Il y a eu : " + affectation1 + " affections");
       System.out.println ("Il y a eu : " + comparaison1 + " comparaisons");
       System.out.println ("Il y a eu : " + echange1 + " echanges");
+      System.out.println ("Il y a eu : " + operation + " operations");
 }
 
  
