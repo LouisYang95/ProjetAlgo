@@ -22,7 +22,7 @@ class   ProjetAlgo1
     int operation = 0;          //Represente les comparaisons + affectations
     int l  =  tab.length-1 ;
 
-  for (  int  i  =  1 ;  i  <= l ;  i++)
+  for (  int  i  =  0 ;  i  <= l ;  i++)
   {
         comparaison +=1;  
         affectation +=1;
@@ -160,12 +160,14 @@ static void TriBulleOpti  (int table []){
  
 //--------------- RUN DU CODE ----------------//
  public static void  main ( String [] args ) 
- {     int [] tab = {1,1231,65,54,3,4124,421,5435,7657,223};      //VALEUR A METTRE DANS LE TABLEAU
+ {     //int [] tab = {1,1231,65,54,3,4124,421,5435,7657,223};      //VALEUR A METTRE DANS LE TABLEAU
+       //int[] tab = {10,9,8,7,6,5,4,3,2,1};
+       int[] tab = {6,10,9,8,7,5,4,3,2,1};
    System.out.println ("Tableau sans le tri:");
    AfficheTableau(tab);
-   //TriSelect (tab);
+   TriSelect (tab);
    //tri_insertion (tab);
-   TriBulle (tab);
+   //TriBulle (tab);
    //TriBulleOpti (tab);
    System.out.println ("Tableau trié :");
    AfficheTableau  (tab);
