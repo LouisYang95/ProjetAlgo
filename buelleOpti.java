@@ -1,4 +1,3 @@
-
 public class buelleOpti {
 
     class  Main  
@@ -8,14 +7,15 @@ public class buelleOpti {
         boolean ordre = false; 
         int temp; 
 
-        int affectation = 1;
+        int affectation = 0;
         int comparaison = 0;
+        int echange = 0;
 
         while (!ordre) 
         {
             ordre = true; 
 
-            affectation += 1; 
+             
             comparaison += 1; 
 
             for (int j = 0; j < tableau.length - 1; j++) 
@@ -31,8 +31,9 @@ public class buelleOpti {
                     tableau[j] = tableau[j + 1]; 
                     tableau[j + 1] = temp; 
 
-                    affectation += 4; 
+                    affectation += 3; 
                     comparaison += 1; 
+                    echange +=  1;
                 }
             }
         }
@@ -44,6 +45,7 @@ public class buelleOpti {
 
         System.out.println("Affectations : " + affectation);
         System.out.println("Comparaisons : " + comparaison);
+        System.out.println("Echanges : " + echange);
     }
  }
 
