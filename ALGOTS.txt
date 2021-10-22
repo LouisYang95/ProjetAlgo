@@ -1,0 +1,22 @@
+TRI SELECTION 
+
+
+ENTREE 
+	Afficher un tableau
+	l = longueur de tableau
+
+Debut 
+Pour i = 0 a l-1
+	min = i
+	pour j = i+1 a l
+
+	 	si t[ j ] < t[min] alors j = min 
+		fin si
+
+	fin pour 
+
+	si i =/= min , alors changer  tab i et tab min 
+Fin pour 
+
+Afficher tab
+Fin
