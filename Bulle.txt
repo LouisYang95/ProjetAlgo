@@ -1,0 +1,21 @@
+
+
+Tri bulle
+
+Creation tableau 
+
+	l = longueur du tableau
+	Pour i = l, i supérieur ou égale a 1 , on a i -1 
+	Fin pour 
+
+	Pour j =2, j inférieur ou égale a i , on a j +1
+	Fin pour 
+
+
+Si tab J - 1 > tab j  
+echanger tab j et tab j-1
+Fin si
+
+Afficher tableau
+
+Fin
