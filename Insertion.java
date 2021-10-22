@@ -45,8 +45,9 @@ public class Insertion {
           // int[] tab = {1,2,3,4,5,6,7,8,9,10};
           // int[] tab = {1,12,4,5,93,21,8,11};  
        
+     System.out.println("Apres le tri par insertion"); 
          tri_insertion(tab); 
-         System.out.println("Apres le tri par insertion");
+         
      
    } 
 }
