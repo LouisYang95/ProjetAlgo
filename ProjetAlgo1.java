@@ -161,14 +161,14 @@ static void TriBulleOpti  (int table []){
 //--------------- RUN DU CODE ----------------//
  public static void  main ( String [] args ) 
  {     //int [] tab = {1,1231,65,54,3,4124,421,5435,7657,223};      //VALEUR A METTRE DANS LE TABLEAU
-       //int[] tab = {10,9,8,7,6,5,4,3,2,1};
-       int[] tab = {1,2,3,4,5,6,7,8,9,10};
+       int[] tab = {10,9,8,7,6,5,4,3,2,1};
+       //int[] tab = {1,2,3,4,5,6,7,8,9,10};
    System.out.println ("Tableau sans le tri:");
    AfficheTableau(tab);
-   TriSelect (tab);
+   //TriSelect (tab);
    //tri_insertion (tab);
    //TriBulle (tab);
-   //TriBulleOpti (tab);
+   TriBulleOpti (tab);
    System.out.println ("Tableau trié :");
    AfficheTableau  (tab);
    
