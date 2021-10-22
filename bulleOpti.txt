@@ -1,0 +1,23 @@
+
+
+Tri bulle opti
+
+Creation tableau 
+
+Initialise boolean order = faux
+
+	f = longueur du tableau
+	Pour i = f jusqu'a 1 , on a i -1 
+	Fin pour 
+
+	Pour j =2  jusqu'a i , on a j +1
+	Fin pour 
+
+
+Si tab J + 1 < tab j  
+echanger tab j et tab j+1
+Fin si
+
+Afficher tableau
+
+Fin
